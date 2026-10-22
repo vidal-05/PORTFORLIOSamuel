@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Mwindjou : projets, missions en entreprise et parcours scolaire en administration systèmes et réseaux.">
+  <title>Projets &amp; Missions | Mwindjou</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="top">
+  <div class="container">
+    <a href="index.html#home" class="logo">Mwindjou<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <ul class="links" id="links">
+      <li><a href="index.html#home">Accueil</a></li>
+      <li><a href="index.html#about">À propos</a></li>
+      <li><a href="index.html#career">Carrière</a></li>
+      <li><a href="projects.html" class="active">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="container">
+    <h1>Projets &amp; Missions</h1>
+    <p class="lead">Présentation détaillée des entreprises d'accueil et accès aux rapports de missions.</p>
+    <div class="filters" id="filters">
+      <button class="chip on" data-filter="all">Tout</button>
+      <button class="chip" data-filter="alternance">Alternance</button>
+      <button class="chip" data-filter="stage">Stages</button>
+      <button class="chip" data-filter="formation">Formation</button>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding-bottom:80px">
+
+  <article class="proj" id="alternance" data-cat="alternance">
+    <div class="visual v1">REDVISE</div>
+    <div class="body">
+      <h2>REDVISE</h2>
+      <div class="when">De Septembre 2025 à Aujourd'hui · Alternance <span class="badge">Poste Actuel</span></div>
+      <h4>L'Équipe IT</h4>
+      <ul class="team">
+        <li>DSI &amp; Admin Réseaux</li>
+        <li>Lead Dev &amp; Tech Support</li>
+        <li>Moi (Alternant) — Admin Sys &amp; Réseau Junior</li>
+      </ul>
+      <h4>Contexte</h4>
+      <p>PME Services IT Multi-clients</p>
+      <h3 style="margin:16px 0 8px">L'Entreprise &amp; Missions</h3>
+      <p>REDVISE est un intégrateur de solutions numériques. Mon rôle est d'assurer le <strong>Maintien en Condition Opérationnelle (MCO)</strong> des infrastructures serveurs et réseaux des clients, tout en pilotant des projets de planification WiFi et de gestion de parc informatique.</p>
+      <p>Administration sous <strong>Windows Server</strong> &amp; environnements <strong>Virtualisés</strong>.</p>
+      <p>Configuration d'équipements réseaux sécurisés (Mikrotik, Firewalling).</p>
+      <a class="btn primary" href="details.html?id=redvise">Découvrir les missions en détail</a>
+    </div>
+  </article>
+
+  <article class="proj" id="stage" data-cat="stage">
+    <div class="visual v2">ITIC</div>
+    <div class="body">
+      <h2>ITIC Paris</h2>
+      <div class="when">Mai 2025 à Juillet 2025 · Stage (10 semaines)</div>
+      <h4>Le Parc</h4>
+      <ul class="team"><li>+200 Postes de TP</li><li>Serveurs Pédagogiques</li></ul>
+      <h4>L'Équipe</h4>
+      <ul class="team"><li>Moi (Stagiaire)</li><li>Support de Proximité</li></ul>
+      <h3 style="margin:16px 0 8px">Missions Techniques</h3>
+      <p>Immersion au sein du service informatique de l'ITIC Paris. Mise en place de solutions de monitoring (Zabbix), sécurisation des accès (VPN Mikrotik) et automatisation du déploiement système (NTLite).</p>
+      <p><strong>Support</strong> — Assistance utilisateurs et dépannage matériel de premier niveau.</p>
+      <p><strong>Réseau</strong> — Réfection du brassage et fiabilisation des accès en salle de cours.</p>
+      <a class="btn primary" href="details.html?id=itic">Voir le compte rendu de stage</a>
+    </div>
+  </article>
+
+  <section data-cat="formation" style="padding:24px 0 0">
+    <h2 class="title">Travaux de Formation</h2>
+    <p class="lead">Parcours BTS SIO SISR</p>
+    <div class="cards">
+      <a class="mini" href="details.html?id=sio_sys">
+        <h3>Ateliers Systèmes</h3>
+        <p>Administration Windows Server et Linux. Migration de rôles FSMO, déploiement Active Directory via scripts Bash/CSV et gestion de parc avec GLPI.</p>
+        <span class="go">Consulter le détail →</span>
+      </a>
+      <a class="mini" href="details.html?id=sio_net">
+        <h3>Ateliers Réseaux</h3>
+        <p>Architecture et paramétrage sur équipements Mikrotik, Cisco et PfSense. Configuration de protocoles de routage (RIP), haute disponibilité (HA) et liaisons sans fil point-à-point.</p>
+        <span class="go">Consulter le détail →</span>
+      </a>
+    </div>
+
+    <article class="proj" style="margin-top:32px">
+      <div class="visual v3">BTS</div>
+      <div class="body">
+        <h3>Dossiers d'Examen E4 / E6</h3>
+        <p>Mes travaux officiels produits dans l'optique de la soutenance au jury du BTS. Ils comprennent mes contextes reconstitués, mes fiches méthodologiques de résolution de problèmes techniques et la gestion de patrimoine IT.</p>
+        <a class="btn primary" href="details.html?id=bts_exam">Accéder aux dossiers</a>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer>© 2026 Mwindjou Mhoumadi — Portfolio BTS SIO SISR</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

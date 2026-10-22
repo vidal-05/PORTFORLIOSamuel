@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Mwindjou, Administrateur Système et Réseaux junior. Passionné par l'infrastructure, la cybersécurité et l'automatisation.">
+  <title>Portfolio | Mwindjou</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="top">
+  <div class="container">
+    <a href="#home" class="logo">Mwindjou<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <ul class="links" id="links">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#career">Carrière</a></li>
+      <li><a href="#education">Formation</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div class="container">
+    <h1>Admin Sys <em>&amp; Réseaux.</em></h1>
+    <p class="intro">TCHOMGOUO samuel arthur — étudiant BTS SIO SISR, alternant chez REDVISE. Passionné par l'infrastructure, la cybersécurité et l'automatisation.</p>
+    <div class="cta">
+      <a href="#about" class="btn primary">Découvrir mon profil</a>
+      <a href="projects.html" class="btn">Mes projets</a>
+      <a href="https://github.com/mwiinmh" target="_blank" rel="noopener" class="btn">GitHub</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="1">0</b><span>10 semaines de stage </span></div>
+      <div class="stat"><b data-count="6">0</b><span>MISSIONS</span></div>
+      <div class="stat"><b>2026</b><span>DIPLÔME BTS SIO (en cours)</span></div>
+    </div>
+  </div>
+  <div class="scroll">Scroll ↓</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="eyebrow">01. Profil</div>
+    <h2 class="title">À propos de moi</h2>
+    <div class="about-grid">
+      <aside class="profile-card reveal">
+        <div class="avatar">M</div>
+        <h3>TCHOMGOUO samuel</h3>
+        <div class="sub">Étudiant BTS SIO SISR</div>
+        <div class="sub"></div>
+        <ul>
+          <li>📍 Paris, France</li>
+          <li>🌐 FR </li>
+          <li>🟢 </li>
+        </ul>
+      </aside>
+      <div class="about-text reveal">
+        <p>Je suis actuellement étudiant en deuxième année de BTS Services Informatiques aux Organisations (option SISR) à l'ITIC Paris, en alternance.</p>
+        <p>Depuis toujours, je suis attiré par l'informatique et les nouvelles technologies, avec une préférence pour les systèmes et les réseaux.</p>
+        <p>Aujourd'hui, j'ai la chance de mettre en pratique ce que j'apprends en entreprise, chez REDVISE, où j'interviens, chez nos clients, sur la maintenance de serveurs, la sécurisation d'infrastructures réseau et la supervision.</p>
+        <p>Je m'intéresse particulièrement à la cybersécurité et à l'architecture réseau, domaines dans lesquels je souhaite évoluer.</p>
+        <p>En dehors de mon parcours professionnel, j'aime continuer à apprendre par moi-même, notamment à travers l'automatisation avec n8n et l'exploration des usages de l'intelligence artificielle dans l'IT.</p>
+        <div class="cta">
+          <a href="pdf/CV_Samuel_Tchomgouo_BTS_SIO_SISR.pdf" class="btn primary" download>Télécharger mon CV</a>
+          <a href="#contact" class="btn">Me contacter</a>
+        </div>
+
+        <div class="skills-hint">Compétences — cliquez pour en savoir plus</div>
+        <div class="chips" id="skillChips"></div>
+        <div class="skill-detail" id="skillDetail">
+          <b>Compétence technique</b><br>Sélectionnez une compétence ci-dessus pour voir les outils & technologies associés.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section id="stack" style="background:var(--bg2)">
+  <div class="container">
+    <div class="eyebrow">02. Stack</div>
+    <h2 class="title">Technologies utilisées</h2>
+    <p class="lead">Les outils que j'utilise pour administrer, superviser, automatiser et faire évoluer des environnements systèmes et réseaux.</p>
+    <div class="stack-tabs" id="stackTabs"></div>
+    <div class="stack-grid" id="stackGrid"></div>
+  </div>
+</section>
+
+<!-- CAREER -->
+<section id="career">
+  <div class="container">
+    <div class="eyebrow">03. Carrière</div>
+    <h2 class="title">Expérience Professionnelle</h2>
+    <div class="timeline">
+      <article class="t-item reveal">
+        <h3>N.S Digital <span class="badge">stage</span></h3>
+        <div class="meta">Août 2026 — En cours</div>
+        <p>Apprentissage et mise en pratique des architectures réseaux et systèmes en entreprise.</p>
+        <a class="more" href="projects.html#stage">Voir les missions →</a>
+      </article>
+      <article class="t-item reveal">
+        <h3>ITIC Paris <span class="badge">Stage</span></h3>
+        <div class="meta">Mai 2025 — Juillet 2025</div>
+        <p>Maintenance du parc informatique pédagogique et assistance utilisateurs.</p>
+        <a class="more" href="projects.html#stage">Voir les missions →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="background:var(--bg2)">
+  <div class="container">
+    <div class="eyebrow">04. Formation</div>
+    <h2 class="title">Parcours Scolaire</h2>
+    <div class="timeline">
+      <article class="t-item reveal">
+        <h3>BTS SIO option SISR</h3>
+        <div class="meta">2024 — 2026 · En cours</div>
+        <div class="loc">ITIC Paris, France</div>
+        <p>Solutions d'Infrastructure, Systèmes et Réseaux. Spécialisation en administration systèmes sécurisés et architecture réseau.</p>
+      </article>
+      <article class="t-item reveal">
+        <h3>Bachelor Génie Électrique &amp; Électronique</h3>
+        <div class="meta">2022</div>
+        <div class="loc">Mahsa University, Malaisie</div>
+        <p>Formation internationale technique axée sur l'électronique embarquée et les systèmes électriques.</p>
+      </article>
+      <article class="t-item reveal">
+        <h3>Bac Scientifique (Série D)</h3>
+        <div class="meta">2019</div>
+        <div class="loc">Groupe Scolaire L'Olivier, Comores</div>
+        <p>Obtention du baccalauréat scientifique.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="eyebrow">05. Portfolio</div>
+      <h2 class="title">Projets &amp; Missions</h2>
+      <p class="lead">Toutes mes documentations techniques, projets d'école et missions d'entreprise sont regroupés sur une page dédiée.</p>
+      <a href="projects.html" class="btn primary">Accéder au Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--bg2)">
+  <div class="container">
+    <div class="eyebrow">06. Contact</div>
+    <h2 class="title">Me Contacter</h2>
+    <p class="lead">Vous avez un projet, une question ou souhaitez échanger ? Contactez-moi via le formulaire ou directement par l'un des canaux ci-dessous.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="info-block"><h4>Email</h4><a href="mailto:contact@mwindjou.fr">contact@mwindjou.fr</a></div>
+        <div class="info-block"><h4>LinkedIn</h4><a href="https://linkedin.com/in/mwindjou-mhoumadi-08a2141b5/" target="_blank" rel="noopener">linkedin.com/in/mwindjou</a></div>
+        <div class="info-block"><h4>GitHub</h4><a href="https://github.com/mwiinmh" target="_blank" rel="noopener">github.com/mwiinmh</a></div>
+        <div class="info-block"><h4>Localisation</h4>Paris, France</div>
+        <div class="info-block"><h4>Disponible en alternance</h4>Jusqu'en juin 2026 · Île-de-France</div>
+      </div>
+      <form class="form" id="contactForm" novalidate>
+        <div class="head"><h3>Envoyer un message</h3><small>Je réponds sous 24–48h</small></div>
+        <div class="success" id="success"><b>Message envoyé !</b> Je vous répondrai dans les meilleurs délais.</div>
+        <div class="field"><label for="name">Votre nom</label><input id="name" type="text" placeholder="Jean Dupont"></div>
+        <div class="field"><label for="email">Email *</label><input id="email" type="email" required placeholder="jean@exemple.com"></div>
+        <div class="field"><label for="subject">Sujet</label><input id="subject" type="text" placeholder="Proposition d'alternance"></div>
+        <div class="field"><label for="message">Message *</label><textarea id="message" required maxlength="1000"></textarea><div class="count"><span id="count">0</span> caractère</div></div>
+        <button type="submit" class="btn primary">Envoyer le message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Mwindjou Mhoumadi — Portfolio BTS SIO SISR</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

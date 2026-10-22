@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détails | Mwindjou</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="top">
+  <div class="container">
+    <a href="index.html#home" class="logo">Mwindjou<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <ul class="links" id="links">
+      <li><a href="index.html#home">Accueil</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="detail" id="detail"></main>
+
+<footer>© 2026 Mwindjou Mhoumadi — Portfolio BTS SIO SISR</footer>
+
+<script src="js/main.js"></script>
+<script>
+// Contenu modifiable : remplace les textes par tes vraies missions.
+const DETAILS = {
+  redvise: {
+    title: "REDVISE — Missions en alternance",
+    when: "Septembre 2025 — En cours",
+    intro: "Maintien en condition opérationnelle des infrastructures serveurs et réseaux des clients.",
+    sections: [
+      ["Systèmes", ["Administration Windows Server", "Environnements virtualisés", "Gestion de parc informatique"]],
+      ["Réseau", ["Configuration d'équipements Mikrotik", "Firewalling", "Planification WiFi"]],
+      ["Supervision", ["Suivi de l'état des serveurs", "Gestion des alertes"]]
+    ]
+  },
+  itic: {
+    title: "ITIC Paris — Compte rendu de stage",
+    when: "Mai 2025 — Juillet 2025 · 10 semaines",
+    intro: "Immersion dans le service informatique : parc de plus de 200 postes de TP et serveurs pédagogiques.",
+    sections: [
+      ["Monitoring", ["Mise en place de Zabbix"]],
+      ["Sécurité", ["VPN Mikrotik"]],
+      ["Automatisation", ["Déploiement système avec NTLite"]],
+      ["Support", ["Assistance utilisateurs", "Brassage et fiabilisation des accès en salle"]]
+    ]
+  },
+  sio_sys: {
+    title: "Ateliers Systèmes",
+    when: "BTS SIO SISR",
+    intro: "Administration Windows Server et Linux.",
+    sections: [
+      ["Active Directory", ["Migration de rôles FSMO", "Déploiement via scripts Bash/CSV"]],
+      ["Gestion de parc", ["Installation et configuration de GLPI"]]
+    ]
+  },
+  sio_net: {
+    title: "Ateliers Réseaux",
+    when: "BTS SIO SISR",
+    intro: "Architecture et paramétrage d'équipements réseau.",
+    sections: [
+      ["Équipements", ["Mikrotik", "Cisco", "pfSense"]],
+      ["Protocoles", ["Routage RIP", "Haute disponibilité (HA)", "Liaisons sans fil point-à-point"]]
+    ]
+  },
+  bts_exam: {
+    title: "Dossiers d'examen E4 / E6",
+    when: "BTS SIO SISR",
+    intro: "Travaux officiels produits pour la soutenance devant le jury du BTS.",
+    sections: [
+      ["Contenu", ["Contextes reconstitués", "Fiches méthodologiques de résolution de problèmes techniques", "Gestion de patrimoine IT"]]
+    ]
+  }
+};
+
+const id = new URLSearchParams(location.search).get('id');
+const d = DETAILS[id];
+const root = document.getElementById('detail');
+root.innerHTML = d
+  ? `<a class="back" href="projects.html">← Retour aux projets</a>
+     <h1>${d.title}</h1><div class="when">${d.when}</div><p>${d.intro}</p>
+     ${d.sections.map(([h, items]) => `<h2>${h}</h2><ul>${items.map(i => `<li>${i}</li>`).join('')}</ul>`).join('')}`
+  : `<a class="back" href="projects.html">← Retour aux projets</a><h1>Page introuvable</h1>`;
+if (d) document.title = d.title + ' | Mwindjou';
+</script>
+</body>
+</html>
